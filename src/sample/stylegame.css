@@ -1,0 +1,6 @@
+  #AnchorGame
+   {
+       -fx-background-image: url("images/backgroundGame.png");
+       -fx-background-repeat: stretch;
+       -fx-background-position: center;
+   }
