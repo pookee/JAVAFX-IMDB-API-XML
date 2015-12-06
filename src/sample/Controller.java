@@ -35,12 +35,12 @@ public class Controller {
         logger.log(Level.INFO, "Button Clicked");
         logger.log(Level.INFO, "Getting information ...");
 
+
+
         monFilm = RechecheField.getText();
         model.updateHistorique(); // On indique que l'historique augmente de 1
         updateGuiHistorique(model.getHistorique());
         model.setLoading(new Float(0));
-
-
 
         InputStream ressource = model.GetFilmByName(monFilm); // Appel au modèle pour connexion à l'API
         model.AnalysingXML(ressource); // Traitement du XML
@@ -96,6 +96,7 @@ public class Controller {
         linkImdb.setText("http://www.imdb.com/title/" + model.getImdbID());
 
         progressIndicator.setProgress(model.getLoading());
+
     }
 
     @FXML

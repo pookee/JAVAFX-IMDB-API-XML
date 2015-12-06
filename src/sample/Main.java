@@ -16,6 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
         primaryStage.setTitle("IMDB Search Engine");
+        primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root, 800, 800)); // Dimensions de la fenêtre
         primaryStage.show();
 
