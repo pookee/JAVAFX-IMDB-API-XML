@@ -1,0 +1,8 @@
+  #startButton
+   {
+        -fx-background-image: url("images/startButton.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-radius: 150px;
+         height : 50px;
+         width : 50px; 
+        }
