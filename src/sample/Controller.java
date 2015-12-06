@@ -13,8 +13,12 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 
 import java.io.InputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 public class Controller {
 
@@ -178,6 +182,13 @@ public class Controller {
     public void exitSoft() {
         System.exit(0);
     } // Fichier --> Close
+
+    @FXML
+    public void OpenBrowser() throws URISyntaxException {
+
+        System.out.println("LALALALALAL");
+        model.openWebPage(new URI(linkImdb.getText()));
+    }
 
     public void updateGuiHistorique(Integer historiqueNumber) {
 

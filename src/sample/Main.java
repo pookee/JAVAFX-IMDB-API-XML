@@ -17,7 +17,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
         primaryStage.setTitle("IMDB Search Engine");
         primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root, 800, 800)); // Dimensions de la fenêtre
+        primaryStage.setScene(new Scene(root, 800, 830)); // Dimensions de la fenêtre Largeur;Hauteur
         primaryStage.show();
 
         primaryStage.getIcons().add(new Image("http://martyraney.com/wp-content/uploads/2013/06/imdb1.png")); // Icone en haut de l'app
