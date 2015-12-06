@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 
 <StackPane fx:id="StackPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
@@ -97,20 +91,11 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Text fx:id="genreText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Historique" textAlignment="CENTER" underline="true" wrappingWidth="151.525390625">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Historique" textAlignment="CENTER" underline="true" wrappingWidth="151.525390625">
                                  <font>
                                     <Font name="Helvetica" size="13.0" />
                                  </font>
                               </Text>
-                              <Text fx:id="realisateurLabel1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="1" />
-                              <Text fx:id="runtimeLabel1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="2" />
-                              <Text fx:id="countryText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="3" />
-                              <Text fx:id="langageText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="4" />
-                              <Text fx:id="yearText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="5" />
-                              <Text fx:id="ratedText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="6" />
-                              <Text fx:id="awardText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="7" />
-                              <Text fx:id="actorsText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="8" />
-                              <Text fx:id="typeText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="9" />
                               <Hyperlink fx:id="historyLInk5" alignment="CENTER" onAction="#clickHistory5" prefHeight="25.0" prefWidth="173.0" textFill="WHITE" GridPane.rowIndex="5" />
                               <Hyperlink fx:id="historyLInk1" alignment="CENTER" onAction="#clickHistory1" prefHeight="25.0" prefWidth="224.0" textFill="WHITE" GridPane.rowIndex="1" />
                               <Hyperlink fx:id="historyLInk2" alignment="CENTER" contentDisplay="CENTER" onAction="#clickHistory2" prefHeight="25.0" prefWidth="150.0" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2" />
@@ -177,7 +162,7 @@
                         <ImageView fx:id="afficheGame" fitHeight="254.0" fitWidth="200.0" layoutX="587.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
                         <ProgressBar fx:id="scoreGame" layoutX="483.0" layoutY="32.0" prefHeight="82.0" prefWidth="298.0" progress="0.0" style="-fx-background-color: green;" visible="false" />
                         <Text fx:id="scoreText" layoutX="621.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score :" visible="false" />
-                        <Text fx:id="gameSynopsis" layoutX="20.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Synopsis" wrappingWidth="543.3388671875" />
+                        <Text fx:id="gameSynopsis" layoutX="20.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="543.3388671875" />
                         <Button fx:id="reponse1Button" disable="true" layoutX="154.0" layoutY="546.0" mnemonicParsing="false" onAction="#valideReponse1" prefHeight="88.0" prefWidth="218.0" text="Solution 1">
                            <font>
                               <Font size="20.0" />
@@ -196,12 +181,12 @@
                            </font></Button>
                         <Button fx:id="hintButton" layoutX="312.0" layoutY="161.0" mnemonicParsing="false" onAction="#giveHint" text="Astuce (-0,5 pt)" visible="false" />
                         <Text fx:id="gameTitle" layoutX="603.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="168.3388671875" />
-                        <Button fx:id="startButton" layoutX="237.0" layoutY="107.0" mnemonicParsing="false" onAction="#StartGameTvShow" prefHeight="81.0" prefWidth="296.0" text="Start Game">
+                        <Button id="startButton" fx:id="startButton" layoutX="311.0" layoutY="126.0" maxHeight="131.0" maxWidth="261.0" minHeight="123.0" minWidth="189.0" mnemonicParsing="false" onAction="#StartGameTvShow" prefHeight="131.0" prefWidth="189.0" stylesheets="@button.css">
                            <font>
                               <Font name="System Bold" size="30.0" />
                            </font></Button>
-                        <Button fx:id="continueButton" layoutX="361.0" layoutY="486.0" mnemonicParsing="false" onAction="#continueGame" prefHeight="38.0" prefWidth="89.0" text="Continuer" />
-                        <Button fx:id="retryButton" layoutX="642.0" layoutY="491.0" mnemonicParsing="false" onAction="#RestartGame" prefHeight="38.0" prefWidth="106.0" text="Retry" visible="false" />
+                        <Button fx:id="continueButton" layoutX="361.0" layoutY="486.0" mnemonicParsing="false" onAction="#continueGame" prefHeight="38.0" prefWidth="89.0" text="Continuer" visible="false" />
+                        <Button id="restartButton" fx:id="retryButton" layoutX="687.0" layoutY="497.0" mnemonicParsing="false" onAction="#RestartGame" prefHeight="73.0" prefWidth="77.0" stylesheets="@restart.css" />
                      </children>
                   </AnchorPane>
               </content>

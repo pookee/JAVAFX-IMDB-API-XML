@@ -9,6 +9,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 
 import java.io.InputStream;
@@ -660,6 +661,9 @@ public class Controller {
     @FXML
     private Button reponse4Button;
 
+    @FXML
+    private Button rechercheBouton;
+
 
     // TEXT
 
@@ -704,6 +708,9 @@ public class Controller {
 
     @FXML
     private Text scoreText;
+
+    @FXML
+    private Text genreText1;
 
 
     // TEXTFIELD
@@ -806,6 +813,9 @@ public class Controller {
 
     @FXML
     private DialogPane boiteDialog;
+
+    @FXML
+    private StackPane StackPane;
 
 
 }
