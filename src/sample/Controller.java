@@ -3,7 +3,11 @@ package sample;
 import javafx.fxml.FXML;
 
 import javafx.event.EventHandler;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -11,16 +15,16 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
-
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class Controller {
+public class Controller implements Initializable{
 
     private Float version = new Float(2.0); // Version de l'app
 
@@ -52,7 +56,6 @@ public class Controller {
 
         System.out.println(model.getTitle());
 
-
         // MISE A JOUR DE LA VUE
 
         realisateurLabel.setText("Réalisateur : " + model.getDirector());
@@ -60,7 +63,7 @@ public class Controller {
         plotText.setText(model.getPlot());
         runtimeLabel.setText("Durée : " + model.getRuntime());
 
-        if (model.getPoster().equals("N/A")) {
+        if (model.getPoster().equals("")) {
             imageAffiche.setImage(new Image("https://www.ginesisnatural.com/images/no_image.jpg"));
         } else {
             imageAffiche.setImage(new Image(model.getPoster()));
@@ -186,7 +189,6 @@ public class Controller {
     @FXML
     public void OpenBrowser() throws URISyntaxException {
 
-        System.out.println("LALALALALAL");
         model.openWebPage(new URI(linkImdb.getText()));
     }
 
@@ -828,5 +830,8 @@ public class Controller {
     @FXML
     private StackPane StackPane;
 
-
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        progressIndicator.setProgress(-1);
+    }
 }

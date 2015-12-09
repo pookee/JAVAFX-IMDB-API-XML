@@ -25,6 +25,7 @@ public class Model implements ContentHandler{
     private Map<String, String> response = new HashMap<String, String>();
     private XMLReader ressource;
     private String lastNode;
+    private boolean rechercheSucceed;
 
 
     private String version = "short";
@@ -141,6 +142,7 @@ public class Model implements ContentHandler{
         released="";
         actors="";
         year="";
+        title="";
     }
 
     // Gestion de l'historique
@@ -444,139 +446,184 @@ public class Model implements ContentHandler{
     @Override // !!!! PERMET DE RECUPERER LE XML
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
         lastNode = qName;
-        if(qName.equals("movie"))
+
+        if(qName.equals("root")) {
+            if (atts.getValue("response").equals("False"))
+            {
+                clearAll();
+                setTitle("NOT FOUND PLEASE TRY AGAIN");
+                rechercheSucceed = false;
+                return;
+            }
+        }
+
+        if (qName.equals("movie"))
         { // ICI ON RECUPERE CE DONT ON A BESOIN DANS LE XML
 
-            if(atts.getValue("title").equals("N/A")){
-            }
-            else{
-                setTitle(atts.getValue("title"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("title").equals("N/A"))
+                {
+                    setTitle("");
+                }
+                else
+                {
+                    setTitle(atts.getValue("title"));
+                    loading = loading + new Float(0.05882352941);
+                    rechercheSucceed = true;
+                }
 
-            if(atts.getValue("year").equals("N/A")){
-            }
-            else{
-                setYear(atts.getValue("year"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("year").equals("N/A"))
+                {
+                    setYear("");
+                }
+                else
+                {
+                    setYear(atts.getValue("year"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("rated").equals("N/A")){
-            }
-            else{
-                setRated(atts.getValue("rated"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("rated").equals("N/A"))
+                {
+                    setRated("");
+                }
+                else
+                {
+                    setRated(atts.getValue("rated"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("released").equals("N/A")){
-            }
-            else{
-                setReleased(atts.getValue("released"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("released").equals("N/A"))
+                {
+                    setReleased("");
+                }
+                else {
+                    setReleased(atts.getValue("released"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("runtime").equals("N/A")){
-            }
-            else{
-                setRuntime(atts.getValue("runtime"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("runtime").equals("N/A"))
+                {
+                    setRuntime("");
+                } else
+                {
+                    setRuntime(atts.getValue("runtime"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("genre").equals("N/A")){
-            }
-            else{
-                setGenre(atts.getValue("genre"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("genre").equals("N/A"))
+                {
+                    setGenre("");
+                }
+                else
+                {
+                    setGenre(atts.getValue("genre"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("director").equals("N/A")){
-            }
-            else{
-                setDirector(atts.getValue("director"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("director").equals("N/A"))
+                {
+                    setDirector("");
+                } else
+                {
+                    setDirector(atts.getValue("director"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("actors").equals("N/A")){
-            }
-            else{
-                setActors(atts.getValue("actors"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("actors").equals("N/A"))
+                {
+                    setActors("");
+                }
+                else {
+                    setActors(atts.getValue("actors"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("plot").equals("N/A")){
-            }
-            else{
-                setPlot(atts.getValue("plot"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("plot").equals("N/A"))
+                {
+                    setPlot("");
+                }
+                else
+                {
+                    setPlot(atts.getValue("plot"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("language").equals("N/A")){
-            }
-            else{
-                setLanguage(atts.getValue("language"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("language").equals("N/A"))
+                {
+                    setLanguage("");
+                } else {
+                    setLanguage(atts.getValue("language"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("country").equals("N/A")){
-            }
-            else{
-                setCountry(atts.getValue("country"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("country").equals("N/A"))
+                {
+                    setCountry("");
+                } else {
+                    setCountry(atts.getValue("country"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("awards").equals("N/A")){
-            }
-            else{
-                setAwards(atts.getValue("awards"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("awards").equals("N/A"))
+                {
+                    setAwards("");
+                } else
+                {
+                    setAwards(atts.getValue("awards"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("poster").equals("N/A")){
-            }
-            else{
-                setPoster(atts.getValue("poster"));
-                loading = loading + new Float(0.05882352941);
-            }
+                if (atts.getValue("poster").equals("N/A"))
+                {
+                    setPoster("http://www.ginesisnatural.com/images/no_image.jpg");
+                } else {
+                    setPoster(atts.getValue("poster"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
 
-            if(atts.getValue("metascore").equals("N/A")){
-                setMetascore(new Float(0));
-            }
-            else{
-                setMetascore(Float.parseFloat(atts.getValue("metascore")));
-                loading = loading + new Float(0.05882352941);
+                if (atts.getValue("metascore").equals("N/A"))
+                {
+                    setMetascore(new Float(0));
+                }
+                else
+                {
+                    setMetascore(Float.parseFloat(atts.getValue("metascore")));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            }
+                if (atts.getValue("imdbRating").equals("N/A"))
+                {
+                    setImdbRating(new Float(0));
+                }
+                else
+                {
+                    setImdbRating(Float.parseFloat(atts.getValue("imdbRating")));
+                    loading = loading + new Float(0.05882352941);
+                }
 
-            if(atts.getValue("imdbRating").equals("N/A")){
-                setImdbRating(new Float(0));
-            }
-            else{
-                setImdbRating(Float.parseFloat(atts.getValue("imdbRating")));
-                loading = loading + new Float(0.05882352941);
-            }
+                //imdbVotes = Float.parseFloat(atts.getValue("imdbVotes"));
 
-            //imdbVotes = Float.parseFloat(atts.getValue("imdbVotes"));
+                if (atts.getValue("imdbID").equals("N/A"))
+                {
+                    setImdbID("");
 
-            if(atts.getValue("imdbID").equals("N/A")){
+                } else
+                {
+                    setImdbID(atts.getValue("imdbID"));
+                    loading = loading + new Float(0.05882352941);
+                }
 
+                if (atts.getValue("type").equals("N/A")) {
+                    setType("");
+
+                } else
+                {
+                    setType(atts.getValue("type"));
+                    loading = loading + new Float(0.05882352941);
+                }
             }
-            else {
-                setImdbID(atts.getValue("imdbID"));
-                loading = loading + new Float(0.05882352941);
-            }
-
-            if(atts.getValue("type").equals("N/A")){
-
-            }
-            else{
-                setType(atts.getValue("type"));
-                loading = loading + new Float(0.05882352941);
-            }
-
 
         }
-    }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
