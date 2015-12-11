@@ -850,6 +850,9 @@ public class Controller implements Initializable{
                 // Il faudra donc Override la methode toString de votre objet.
                 // Dans mon cas, ce sont des actions qui sont réenvoyé lorsque la methode startRequest est appelé.
 
+                if(search.equals("")){ // Si la recherche est vide, on propose la recherche de base
+                    search="a";
+                }
                 return model.getAutocomplete(search);
             }
 

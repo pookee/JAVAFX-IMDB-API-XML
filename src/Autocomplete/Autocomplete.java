@@ -33,7 +33,10 @@ public class Autocomplete {
         Thread thread = new Thread(){
             @Override
             public void run(){
+
+
                 List<? extends Object> listOfObj = action.methodForGettingItem(textSearch.getText());
+
                 if(listOfObj==null)
                     return;
                 Platform.runLater(new Runnable() {

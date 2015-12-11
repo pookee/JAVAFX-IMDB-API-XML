@@ -667,11 +667,10 @@ public class Model implements ContentHandler{
             }
             return list;
         } catch (Exception e) {
-            e.printStackTrace();
+            return new ArrayList<ItemFilm>();
         }
 
 
-        return null;
     }
 
     @Override
