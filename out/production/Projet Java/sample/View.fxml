@@ -150,7 +150,14 @@
                               </AnchorPane>
                             </header>
                         </DialogPane>
-                        <TextField fx:id="RechecheField" layoutX="13.0" layoutY="37.0" onAction="#EnterPressed" />
+                        <TextField fx:id="RechecheField" layoutX="13.0" layoutY="37.0" onAction="#EnterPressed">
+                           <contextMenu>
+                              <ContextMenu fx:id="autocompletionGUI">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></TextField>
                      </children>
                   </AnchorPane>
                </content>

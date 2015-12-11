@@ -6,13 +6,17 @@ import org.xml.sax.ContentHandler;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.awt.*;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import java.util.logging.Level;
+import org.codehaus.jettison.json.*;
 /**
  * Created by Alexandre Lunati on 30/11/2015.
  */
@@ -624,6 +628,51 @@ public class Model implements ContentHandler{
             }
 
         }
+
+    public List <ItemFilm> getAutocomplete(String textWritten){
+
+       textWritten = textWritten.replace(" ", "_");
+        textWritten = textWritten.toLowerCase();
+        URL url = null;
+        try {
+            url = new URL("http://sg.media-imdb.com/suggests/"+textWritten.charAt(0)+"/"+textWritten+".json");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        URLConnection connexion;
+
+        try {
+             connexion = url.openConnection();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connexion.getInputStream()));
+
+            StringBuilder content = new StringBuilder();
+            String line;
+            while ((line = bufferedReader.readLine()) != null)
+            {
+                content.append(line);
+            }
+            bufferedReader.close();
+
+            String contentS = content.substring(6+textWritten.length(),content.length()-1);
+
+            JSONArray listOfResult = (new JSONObject(contentS)).getJSONArray("d");
+            List<ItemFilm> list = new ArrayList<ItemFilm>();
+            for (int i = 0; i < listOfResult.length(); i++)
+            {
+                String title = listOfResult.getJSONObject(i).getString("l");
+                ItemFilm itemFilm = new ItemFilm();
+                itemFilm.setTitle(title.toLowerCase());
+                list.add(itemFilm);
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        return null;
+    }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {

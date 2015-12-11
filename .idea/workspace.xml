@@ -8,9 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet Java/sample/View.fxml" afterPath="$PROJECT_DIR$/out/production/Projet Java/sample/View.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet Java/sample/Controller.class" afterPath="$PROJECT_DIR$/out/production/Projet Java/sample/Controller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet Java/sample/Controller$1.class" afterPath="$PROJECT_DIR$/out/production/Projet Java/sample/Controller$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet Java/sample/View.fxml" afterPath="$PROJECT_DIR$/out/production/Projet Java/sample/View.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/restart.css" afterPath="$PROJECT_DIR$/src/sample/restart.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -72,10 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63192904">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,13 +88,30 @@
         <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="144" column="17" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
+              <caret line="667" column="19" selection-start-line="667" selection-start-column="19" selection-end-line="667" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-                <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
                 <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
                 <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
+                <element signature="method#startElement#0;class#Model#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemFilm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ItemFilm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/sample/View.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="157" selection-start-line="17" selection-start-column="153" selection-end-line="17" selection-end-column="157" />
+              <caret line="24" column="157" selection-start-line="17" selection-start-column="153" selection-end-line="17" selection-end-column="157" />
               <folding />
             </state>
           </provider>
@@ -123,11 +140,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.69343066">
+              <caret line="856" column="64" selection-start-line="856" selection-start-column="64" selection-end-line="856" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#clickAbout#0;class#Controller#0" expanded="false" />
@@ -149,7 +166,7 @@
                 <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
                 <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
                 <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-                <element signature="class#9792:10090" expanded="false" />
+                <element signature="class#9926:10224" expanded="false" />
                 <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
                 <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
                 <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -221,7 +238,9 @@
         <option value="$PROJECT_DIR$/src/sample/restart.css" />
         <option value="$PROJECT_DIR$/src/sample/View.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/ItemFilm.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/Autocomplete/Autocomplete.java" />
         <option value="$PROJECT_DIR$/src/sample/Model.java" />
       </list>
     </option>
@@ -237,7 +256,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="800" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -271,7 +290,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,7 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,6 +356,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,6 +383,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sample" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -679,26 +699,32 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32831737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33943662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34473324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27152777" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27968526" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -706,8 +732,11 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816902" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46443516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -742,31 +771,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-            <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
-            <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
-            <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/View.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="42" selection-start-line="163" selection-start-column="29" selection-end-line="163" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -800,7 +804,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -839,9 +843,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-            <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
             <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
             <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
+            <element signature="method#startElement#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -890,7 +894,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -929,9 +933,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-            <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
             <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
             <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
+            <element signature="method#startElement#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -980,7 +984,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1019,9 +1023,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-            <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
             <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
             <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
+            <element signature="method#startElement#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,7 +1074,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1109,9 +1113,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-            <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
             <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
             <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
+            <element signature="method#startElement#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1160,7 +1164,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1217,7 +1221,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1285,7 +1289,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1353,7 +1357,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1399,19 +1403,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/restart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20979021">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/View.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="157" selection-start-line="17" selection-start-column="153" selection-end-line="17" selection-end-column="157" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/button.css">
@@ -1422,17 +1439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/View.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="157" selection-start-line="17" selection-start-column="153" selection-end-line="17" selection-end-column="157" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet Java.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1441,10 +1447,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5898876">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ItemFilm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="667" column="19" selection-start-line="667" selection-start-column="19" selection-end-line="667" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
+            <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
+            <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
+            <element signature="method#startElement#0;class#Model#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69343066">
+          <caret line="856" column="64" selection-start-line="856" selection-start-column="64" selection-end-line="856" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#clickAbout#0;class#Controller#0" expanded="false" />
@@ -1466,7 +1516,7 @@
             <element signature="method#clickHistory14#0;class#Controller#0" expanded="false" />
             <element signature="method#clickHistory15#0;class#Controller#0" expanded="false" />
             <element signature="method#EnterPressed#0;class#Controller#0" expanded="false" />
-            <element signature="class#9792:10090" expanded="false" />
+            <element signature="class#9926:10224" expanded="false" />
             <element signature="method#continueGame#0;class#Controller#0" expanded="false" />
             <element signature="method#RestartGame#0;class#Controller#0" expanded="false" />
             <element signature="method#valideReponse1#0;class#Controller#0" expanded="false" />
@@ -1476,30 +1526,6 @@
             <element signature="method#giveHint#0;class#Controller#0" expanded="false" />
             <element signature="method#updateScore#0;class#Controller#0" expanded="false" />
             <element signature="method#StartGameTvShow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="144" column="17" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initListeSerie#0;class#Model#0" expanded="false" />
-            <element signature="method#GetFilmByName#0;class#Model#0" expanded="false" />
-            <element signature="method#AnalysingXML#0;class#Model#0" expanded="false" />
-            <element signature="method#openWebPage#0;class#Model#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63192904">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

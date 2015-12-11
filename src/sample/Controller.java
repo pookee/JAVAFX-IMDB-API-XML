@@ -1,5 +1,7 @@
 package sample;
 
+import Autocomplete.Autocomplete;
+import Autocomplete.Action;
 import javafx.fxml.FXML;
 
 import javafx.event.EventHandler;
@@ -19,12 +21,15 @@ import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
 public class Controller implements Initializable{
+
+    private Autocomplete autocompleteTextfield;
 
     private Float version = new Float(2.0); // Version de l'app
 
@@ -830,8 +835,37 @@ public class Controller implements Initializable{
     @FXML
     private StackPane StackPane;
 
+    @FXML
+    private ContextMenu autocompletionGUI;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         progressIndicator.setProgress(-1);
+
+        autocompleteTextfield = new Autocomplete(RechecheField,autocompletionGUI);
+        autocompleteTextfield.setAction(new Action() {
+            @Override
+            public List<? extends Object> methodForGettingItem(String search) {
+                // Ici on va renvoyé une liste d'objet qui sera affiché dans votre liste lorsque l'user tapera qqchose dans le textSearch.
+                // Il faudra donc Override la methode toString de votre objet.
+                // Dans mon cas, ce sont des actions qui sont réenvoyé lorsque la methode startRequest est appelé.
+
+                return model.getAutocomplete(search);
+            }
+
+            @Override
+            public void methodWhenAnItemIsSelected(Object obj) {
+
+                // Ici on va appeler les methodes que vous souhaitez éxécuter lorsque le client aura selectionné un item.
+                // L'objet nommé obj, est l'Object selectionné par l'utilisateur.
+                if(obj instanceof ItemFilm) {
+                    model.setTitle(((ItemFilm) obj).toString());
+                    CliqueSurGo();
+                }
+            }
+        });
     }
+
+
 }
+
